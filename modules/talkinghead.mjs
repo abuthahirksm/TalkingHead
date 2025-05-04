@@ -1085,6 +1085,10 @@ class TalkingHead {
     // Check the gltf
     const required = [ this.opt.modelRoot ];
     this.posePropNames.forEach( x => required.push( x.split('.')[0] ) );
+    gltf.scene.traverse(obj => {
+      console.log('Available names', obj.name);
+    });    
+    console.log('Expected', required);
     required.forEach( x => {
       if ( !gltf.scene.getObjectByName(x) ) {
         throw new Error('Avatar object ' + x + ' not found');

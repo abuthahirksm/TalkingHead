@@ -8,6 +8,12 @@ export const site = {
       body: 'F',
       avatarMood: 'neutral',
       fi: 'Brunetti'
+    }, 
+    'spider': {
+      url: './avatars/spider.glb',
+      body: 'F',
+      avatarMood: 'neutral',
+      fi: 'Brunetti'
     }
   },
 
